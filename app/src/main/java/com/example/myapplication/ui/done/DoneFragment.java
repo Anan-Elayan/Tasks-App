@@ -27,7 +27,6 @@ import java.util.Arrays;
 *   in this class display all the object 'tasks' from sharedPreferences in list view but status is done only
 *   and initialize the component and connect to the design using R file
 *
-*
 * */
 
 public class DoneFragment extends Fragment {
