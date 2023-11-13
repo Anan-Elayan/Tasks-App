@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Tasks App</string>
+    <string name="title_home">Home</string>
+    <string name="title_add">Add Tasks</string>
+    <string name="title_done">Done Tasks</string>
+    <string name="add_tasks">add tASKS</string>
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+    <string name="Data" />
+    <string name="tasks_title">Tasks Title</string>
+    <string name="addtask">addTask</string>
+    <string name="done">Done</string>
+    <string name="data">Data</string>
+    <string name="todo">ToDo</string>
+
+
+</resources>

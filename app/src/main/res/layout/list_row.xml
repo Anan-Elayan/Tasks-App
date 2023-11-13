@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+
+    <TextView
+        android:id="@+id/txtTitle1"
+        style="@style/TextAppearance.AppCompat.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="Title" />
+
+    <TextView
+        android:id="@+id/txtDate1"
+        style="@style/TextAppearance.AppCompat.Caption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTitle1"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="7dp"
+        android:maxLength="20"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:text="Date"
+        android:textSize="12sp" />
+
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="88dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:text="@string/done" />
+
+
+</RelativeLayout>
