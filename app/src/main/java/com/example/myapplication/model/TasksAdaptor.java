@@ -53,7 +53,7 @@ public class TasksAdaptor extends ArrayAdapter<Tasks>  {
         txtTitle1.setText(item.getTaskTitle());
 
         TextView  txtDate1 = convertView.findViewById(R.id.txtDate1);
-        txtDate1.setText(item.getTime());
+        txtDate1.setText (item.getDate()+" ,"+item.getTime());
 
         CheckBox checkBox1 = convertView.findViewById(R.id.checkBox1);
 
@@ -66,7 +66,6 @@ public class TasksAdaptor extends ArrayAdapter<Tasks>  {
             for (int i = 0; i < tasksArray.length; i++) {
                 if(tasksArray[i].getTasksId()==selectedTask.getTasksId()){
                     tasksArray[i].setDone(true);
-                    checkBox1.setChecked(true);
                     break;
                 }
             }

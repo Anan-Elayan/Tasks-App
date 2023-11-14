@@ -1,9 +1,11 @@
 package com.example.myapplication.ui.done;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import androidx.annotation.NonNull;
@@ -48,7 +50,6 @@ public class DoneFragment extends Fragment {
             ArrayList<Tasks> tasksList = new ArrayList<>(Arrays.asList(tasksArray));
             ArrayList<Tasks> completTasks = new ArrayList<>();
             for (int i = 0; i < tasksList.size(); i++) {
-                System.out.println(tasksList.get(i).toString());
                 if(tasksList.get(i).isDone()) {
                     completTasks.add(tasksList.get(i));
                 }

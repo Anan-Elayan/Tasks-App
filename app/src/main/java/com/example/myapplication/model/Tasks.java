@@ -1,10 +1,10 @@
 package com.example.myapplication.model;
 
-import androidx.annotation.Nullable;
 
-import java.util.HashMap;
 
-public class Tasks {
+import java.io.Serializable;
+
+public class Tasks implements Serializable {
     
     private String taskTitle;
     private String data;

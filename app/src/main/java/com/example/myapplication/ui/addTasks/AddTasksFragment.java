@@ -1,7 +1,10 @@
 package com.example.myapplication.ui.addTasks;
 
+import static android.content.Intent.getIntent;
+
 import android.app.AlertDialog;
 import android.app.TimePickerDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.view.LayoutInflater;
@@ -16,6 +19,7 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import com.example.myapplication.R;
 import com.example.myapplication.databinding.FragmentAddtasksBinding;
+import com.example.myapplication.databinding.FragmentDoneBinding;
 import com.example.myapplication.model.Tasks;
 import com.example.myapplication.ui.home.HomeFragment;
 import com.google.android.material.textfield.TextInputEditText;
@@ -41,6 +45,7 @@ import java.util.Locale;
 public class AddTasksFragment extends Fragment {
 
     private FragmentAddtasksBinding binding;
+    private FragmentDoneBinding bindingEdit;
     private Button btnSave;
     private Button btnTime;
     private Button btnDate;
@@ -58,8 +63,12 @@ public class AddTasksFragment extends Fragment {
 
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
+
+
         binding = FragmentAddtasksBinding.inflate(inflater, container, false);
+       // bindingEdit = FragmentDoneBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
+       // View root2 = bindingEdit.getRoot();
         arrayList = new ArrayList<>();
         btnSave = root.findViewById(R.id.btnSave);
         btnDate = root.findViewById(R.id.btndate);
